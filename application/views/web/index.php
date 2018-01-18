@@ -128,7 +128,7 @@
         </div>
         <div class="col-sm-6">
           <body-menu>
-            <input id="tab1" type="radio" name="tabs" checked>
+            <input id="tab1" type="radio" name="tabs" checked style="">
             <label for="tab1">SOLO SCIENCE CENTER</label>
 
             <input id="tab2" type="radio" name="tabs">
@@ -168,61 +168,54 @@
       </div><!--/.container-->
 
 
-      <div class="container" style="height: auto">
+      <div class="container" style="height: auto; width: 1250px">
         <div class="center wow fadeInDown">
             <h2>Features</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
-      </div>
-      <div class="container" style="height: auto">
-          <div class="row">
-                  <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-i">
-                          <i class="fa fa-plane"></i>
-                          <h2>Fresh and Clean</h2>
-                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                    </div>
-                  </div><!--/.col-md-4-->
-
-                  <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-y">
-                          <i class="fa fa-graduation-cap"></i>
-                          <h2>Retina ready</h2>
-                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                      </div>
-                  </div><!--/.col-md-4-->
-
-                  <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-o">
-                          <i class="fa fa-university"></i>
-                          <h2>Easy to customize</h2>
-                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                      </div>
-                  </div><!--/.col-md-4-->
-
-                  <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-o">
-                          <i class="fa fa-leaf"></i>
-                          <h2>Adipisicing elit</h2>
-                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                      </div>
-                  </div><!--/.col-md-4-->
-
-                  <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-o">
-                          <i class="fa fa-cogs"></i>
-                          <h2>Sed do eiusmod</h2>
-                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                      </div>
-                  </div><!--/.col-md-4-->
-
-                  <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-o">
-                          <i class="fa fa-heart"></i>
-                          <h2>Labore et dolore</h2>
-                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                      </div>
-                  </div><!--/.col-md-4-->
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-i">
+                    <i class="fa fa-plane"></i>
+                        <h2>Fresh and Clean</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-y">
+                    <i class="fa fa-graduation-cap"></i>
+                        <h2>Retina ready</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-university"></i>
+                        <h2>Easy to customize</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-leaf"></i>
+                        <h2>Adipisicing elit</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-cogs"></i>
+                        <h2>Sed do eiusmod</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-heart"></i>
+                        <h2>Labore et dolore</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
           </div><!--/.row-->
       </div><!--/.container-->
 
