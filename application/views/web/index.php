@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://localhost/STP/assets/slider/icon.css" rel="stylesheet">
-    <link href="http://localhost/stp/assets/slider/bootstrap.min.css" rel="stylesheet">
-	  <link rel="stylesheet" href="http://localhost/stp/assets/slider/font-awesome.min.css">
-	  <link href="http://localhost/stp/assets/slider/animate.min.css" rel="stylesheet">
-    <link href="http://localhost/stp/assets/slider/prettyPhoto.css" rel="stylesheet">
-	  <link href="http://localhost/stp/assets/slider/main.css" rel="stylesheet">
-    <link href="http://localhost/stp/assets/slider/responsive.css" rel="stylesheet">
+    <link href="<?php echo base_url("assets/slider/icon.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("assets/slider/bootstrap.min.css"); ?>" rel="stylesheet">
+	  <link rel="stylesheet" href="<?php echo base_url("assets/slider/font-awesome.min.css"); ?>">
+	  <link href="<?php echo base_url("assets/slider/animate.min.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("assets/slider/prettyPhoto.css"); ?>" rel="stylesheet">
+	  <link href="<?php echo base_url("assets/slider/main.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("assets/slider/responsive.css"); ?>" rel="stylesheet">
     <link rel="stylesheet" id="styles-css" href="http://localhost/stp/assets/css/styles_002.css" type="text/css" media="all">
     <link rel="stylesheet" id="style-css" href="http://localhost/stp/assets/css/style_3.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -66,11 +66,11 @@
         <nav style="background-color:#4286f4">
           <div class="menu text-uppercase">
             <ul class=" horizontal no-padder">
-              <li class=" current-menu-item"><a href="#">Home</a></li>
-              <li><a href="#">Profil</a></li>
-              <li><a href="#">Program</a></li>
-              <li><a href="#">Berita</a></li>
-              <li><a href="#">Solo Science Center</a></li>
+             <li class=" current-menu-item"><a href="">Home</a></li>
+              <li><a href='<?php echo base_url("web/profil"); ?>'>Profil</a></li>
+              <li><a href="<?php echo base_url("web/program"); ?>">Program</a></li>
+              <li><a href="<?php echo base_url("web/berita"); ?>">Berita</a></li>
+              <li><a href="<?php echo base_url("web/ssc"); ?>">Solo Science Center</a></li>
               <li><a href="#">Diklat Mekanik</a>
                 <ul class="sub-menu">
                   <li><a href="#">Berita</a></li>
@@ -128,7 +128,7 @@
         </div>
         <div class="col-sm-6">
           <body-menu>
-            <input id="tab1" type="radio" name="tabs" checked>
+            <input id="tab1" type="radio" name="tabs" checked style="">
             <label for="tab1">SOLO SCIENCE CENTER</label>
 
             <input id="tab2" type="radio" name="tabs">
@@ -166,6 +166,7 @@
           </body-menu>
         </div>
       </div><!--/.container-->
+
 
       <div class="container" style="height:auto; width:1250px">
           <div class="center wow fadeInDown">
@@ -216,6 +217,57 @@
               </div>
           </div><!--/.col-md-4-->
       </div><!--/.row-->
+
+      <div class="container" style="height: auto; width: 1250px">
+        <div class="center wow fadeInDown">
+            <h2>Features</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-i">
+                    <i class="fa fa-plane"></i>
+                        <h2>Fresh and Clean</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-y">
+                    <i class="fa fa-graduation-cap"></i>
+                        <h2>Retina ready</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-university"></i>
+                        <h2>Easy to customize</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-leaf"></i>
+                        <h2>Adipisicing elit</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-cogs"></i>
+                        <h2>Sed do eiusmod</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+            <div class="col-md-4 col-sm-6">
+                <div class="feature-wrap-o">
+                    <i class="fa fa-heart"></i>
+                        <h2>Labore et dolore</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                </div>
+            </div><!--/.col-md-4-->
+          </div><!--/.row-->
+
       </div><!--/.container-->
 
         <div class="footer">
