@@ -167,7 +167,6 @@
         </div>
       </div><!--/.container-->
 
-
       <div class="container" style="height: auto; width: 1250px">
         <div class="center wow fadeInDown">
             <h2>Features</h2>
@@ -217,6 +216,7 @@
                 </div>
             </div><!--/.col-md-4-->
           </div><!--/.row-->
+
       </div><!--/.container-->
 
         <div class="footer">
