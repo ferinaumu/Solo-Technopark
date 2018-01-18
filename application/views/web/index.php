@@ -6,15 +6,15 @@
     <link href="<?php echo base_url("assets/slider/icon.css"); ?>" rel="stylesheet">
     <link href="<?php echo base_url("assets/slider/bootstrap.min.css"); ?>" rel="stylesheet">
 	  <link rel="stylesheet" href="<?php echo base_url("assets/slider/font-awesome.min.css"); ?>">
-	  <link href="<? php echo base_url("assets/slider/animate.min.css"); ?>" rel="stylesheet">
-    <link href="<? php echo base_url("assets/slider/prettyPhoto.css"); ?>" rel="stylesheet">
-	  <link href="<? php echo base_url("assets/slider/main.css"); ?>" rel="stylesheet">
-    <link href="<? php echo base_url("assets/slider/responsive.css"); ?>" rel="stylesheet">
-    <link rel="stylesheet" id="styles-css" href="<? php echo base_url("assets/css/styles_002.css"); ?>" type="text/css" media="all">
-    <link rel="stylesheet" id="style-css" href="<? php echo base_url("assets/css/style_3.css"); ?>" type="text/css" media="all">
+	  <link href="<?php echo base_url("assets/slider/animate.min.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("assets/slider/prettyPhoto.css"); ?>" rel="stylesheet">
+	  <link href="<?php echo base_url("assets/slider/main.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("assets/slider/responsive.css"); ?>" rel="stylesheet">
+    <link rel="stylesheet" id="styles-css" href="http://localhost/stp/assets/css/styles_002.css" type="text/css" media="all">
+    <link rel="stylesheet" id="style-css" href="http://localhost/stp/assets/css/style_3.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<? php echo base_url("assets/css/main.css"); ?>" />
-    <link rel="stylesheet" href="<? php echo base_url("assets/css/style.css"); ?>" />
+    <link rel="stylesheet" href="http://localhost/stp/assets/css/main.css" />
+    <link rel="stylesheet" href="http://localhost/stp/assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -91,7 +91,7 @@
       </div>
     </div>
 
-        <div class="container" style="width:1250px">
+        <div class="container" style="width:1250px; height:auto">
         <div class="slider" style="margin-top:30px">
             <div class="col-sm-6">
             <div id="about-slider">
@@ -168,13 +168,13 @@
       </div><!--/.container-->
 
 
-<    <div class="container">
-         <div class="center wow fadeInDown">
-              <h2>Features</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-         </div>
-       </div>
-       <div class="container">
+      <div class="container" style="height: auto">
+        <div class="center wow fadeInDown">
+            <h2>Features</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="container" style="height: auto">
           <div class="row">
                   <div class="col-md-4 col-sm-6">
                       <div class="feature-wrap-i">
