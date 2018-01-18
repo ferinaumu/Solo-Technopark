@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="http://localhost/stp/assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    function GetXmlHttpObject()
+    {
+      var xmlHttp;
+
+      try {
+        xmlHttp = new XMLHttpRequest();
+      }
+      catch (e)
+      {
+        try {
+          xmlHttp = new ActiveXObject("Msxm12.XMLHTTP");
+        } catch (e) {
+          xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+        }
+
+        }
+        return xmlHttp;
+      }
+    </script>
 
     <style>
     /* Note: Try to remove the following lines to see the effect of CSS positioning */
@@ -33,57 +54,26 @@
   	ga('require', 'displayfeatures');
   	ga('send', 'pageview');
   	</script>
+    <script>
+    $(document).ready(function() {
+      $("#nav li a").click(function() {
+
+          $("#ajax-content").empty().append("<div id='loading'><img src='http://localhost/stp/assets/img/loading.gif' alt='Loading' /></div>");
+          $("#nav li a").removeClass('current');
+          $(this).addClass('current');
+
+          $.ajax({ url: this.href, success: function(html) {
+              $("#ajax-content").empty().append(html);
+              }
+      });
+      return false;
+      });
+  });
+    </script>
 
     <title></title>
   </head>
   <body>
-    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg'); margin-top:5px">
-      <div class="grid-10 tablet-grid-10 mobile-grid-30 b-r logo-holder">
-        <a href="http://localhost/stp/"><img src="http://localhost/stp/assets/img/logostp.png" alt=""></a>
-      </div>
-      <div class="grid-50 tablet-grid-60 mobile-grid-70">
-        <div class="brand">
-          <h3 class="site-title" style="font-size:15px">WHERE <br>COMPETENCE <br>INOVATIVE <br>TECHNOLOGY <br>AND BUSINESS GROW</h3>
-        </div><!-- brand -->
-      </div>
-      <div class="grid-20 tablet-grid-20 hide-on-mobile">
-        <form role="search" method="get" id="searchform" action="https://ristekdikti.go.id/" class="search-top" style="margin:0;">
-          <input name="s" id="s" type="text">
-          <input value="" type="submit">
-        </form>
-      </div>
-    </div>
-
-    <div class="main-nav" style="background-color:#4286f4" data-spy="affix" data-offset-top="197">
-      <div class="grid-container" style="background-color:#4286f4">
-        <nav style="background-color:#4286f4">
-          <div class="menu text-uppercase">
-            <ul class=" horizontal no-padder">
-              <li><a href="<?php echo base_url(); ?>">Home</a></li>
-              <li class="current-menu-item"><a href="#">Profil</a></li>
-              <li><a href="<?php echo base_url("web/program"); ?>">Program</a></li>
-              <li><a href="<?php echo base_url("web/berita"); ?>">Berita</a></li>
-              <li><a href="<?php echo base_url("web/ssc"); ?>">Solo Science Center</a></li>
-              <li><a href="#">Diklat Mekanik</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Berita</a></li>
-                  <li><a href="#">Pendaftaran</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Inkubator Bisnis</a>
-                <ul class="sub-menu">
-                  <li><a href="<?php echo base_url("site/inkub")?>">Berita</a></li>
-                  <li><a href="#">Pendaftaran</a></li>
-                  <li><a href="#">Profil Tenant dan List Produk</a></li>
-                </ul>
-              </li>
-              <li><a href="web/kontak">Kontak</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-
     <div class="container-fluid page page-content">
       <h1>Some text to enable scrolling</h1>
       <h1>Some text to enable scrolling</h1>
@@ -96,15 +86,6 @@
       <h1>Some text to enable scrolling</h1>
       <h1>Some text to enable scrolling</h1>
       <h1>Some text to enable scrolling</h1>
-    </div>
-
-    <div class="footer">
-      <div class="footer-content">
-        <p>Contact Us :</p>
-        <br> <p>wkwkwkwk</p>
-        <br> <p>uuuu</p>
-        <br><br><br> <p>popopopop</p>
-      </div>
     </div>
   </body>
 </html>

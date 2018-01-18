@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="<?php echo base_url("assets/slider/icon.css"); ?>" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost/stp/assets/css/style.css" />
     <link href="<?php echo base_url("assets/slider/bootstrap.min.css"); ?>" rel="stylesheet">
 	  <link rel="stylesheet" href="<?php echo base_url("assets/slider/font-awesome.min.css"); ?>">
 	  <link href="<?php echo base_url("assets/slider/animate.min.css"); ?>" rel="stylesheet">
@@ -14,9 +14,30 @@
     <link rel="stylesheet" id="style-css" href="http://localhost/stp/assets/css/style_3.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost/stp/assets/css/main.css" />
-    <link rel="stylesheet" href="http://localhost/stp/assets/css/style.css" />
+    <link href="<?php echo base_url("assets/slider/icon.css"); ?>" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    function GetXmlHttpObject()
+    {
+      var xmlHttp;
+
+      try {
+        xmlHttp = new XMLHttpRequest();
+      }
+      catch (e)
+      {
+        try {
+          xmlHttp = new ActiveXObject("Msxm12.XMLHTTP");
+        } catch (e) {
+          xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+        }
+
+        }
+        return xmlHttp;
+      }
+    </script>
 
     <style>
     /* Note: Try to remove the following lines to see the effect of CSS positioning */
@@ -40,11 +61,25 @@
   	ga('require', 'displayfeatures');
   	ga('send', 'pageview');
   	</script>
+    <script>
+    $(document).ready(function() {
+      $("#nav li a").click(function() {
 
-    <title></title>
+          $("#ajax-content").empty().append("<div id='loading'><img src='http://localhost/stp/assets/img/loading.gif' alt='Loading' /></div>");
+          $("#nav li a").removeClass('current');
+          $(this).addClass('current');
+
+          $.ajax({ url: this.href, success: function(html) {
+              $("#ajax-content").empty().append(html);
+              }
+      });
+      return false;
+      });
+  });
+    </script>
   </head>
   <body>
-    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg'); margin-top:5px">
+    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg')">
       <div class="grid-10 tablet-grid-10 mobile-grid-30 b-r logo-holder">
         <a href="http://localhost/stp/"><img src="http://localhost/stp/assets/img/logostp.png" alt=""></a>
       </div>
@@ -62,36 +97,36 @@
     </div>
 
     <div class="main-nav" style="background-color:#4286f4" data-spy="affix" data-offset-top="197">
-      <div class="grid-container" style="background-color:#4286f4">
+      <div class="grid-container" style="background-color:#4286f4;width:auto;">
         <nav style="background-color:#4286f4">
           <div class="menu text-uppercase">
-            <ul class=" horizontal no-padder">
-             <li class=" current-menu-item"><a href="">Home</a></li>
+            <ul id="nav" class=" horizontal no-padder">
+             <li><a href="<?php echo base_url("web/home"); ?>">Home</a></li>
               <li><a href='<?php echo base_url("web/profil"); ?>'>Profil</a></li>
               <li><a href="<?php echo base_url("web/program"); ?>">Program</a></li>
               <li><a href="<?php echo base_url("web/berita"); ?>">Berita</a></li>
               <li><a href="<?php echo base_url("web/ssc"); ?>">Solo Science Center</a></li>
-              <li><a href="#">Diklat Mekanik</a>
+              <li><a>Diklat Mekanik</a>
                 <ul class="sub-menu">
                   <li><a href="#">Berita</a></li>
                   <li><a href="#">Pendaftaran</a></li>
                 </ul>
               </li>
-              <li><a href="#">Inkubator Bisnis</a>
+              <li><a>Inkubator Bisnis</a>
                 <ul class="sub-menu">
                   <li><a href="#">Berita</a></li>
                   <li><a href="#">Pendaftaran</a></li>
                   <li><a href="#">Profil Tenant dan List Produk</a></li>
                 </ul>
               </li>
-              <li><a href="#">Kontak</a></li>
+              <li><a href="<?php echo base_url("web/kontak"); ?>">Kontak</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </div>
-
-        <div class="container" style="width:1250px; height:auto">
+    <div id="ajax-content">
+        <div class="container" style="width:1175px;height:auto">
         <div class="slider" style="margin-top:30px">
             <div class="col-sm-6">
             <div id="about-slider">
@@ -128,7 +163,7 @@
         </div>
         <div class="col-sm-6">
           <body-menu>
-            <input id="tab1" type="radio" name="tabs" checked style="">
+            <input id="tab1" type="radio" name="tabs" checked>
             <label for="tab1">SOLO SCIENCE CENTER</label>
 
             <input id="tab2" type="radio" name="tabs">
@@ -167,57 +202,63 @@
         </div>
       </div><!--/.container-->
 
-      <div class="container" style="height: auto; width: 1250px">
+
+      <div class="container" style="width:1175px;height:auto">
         <div class="center wow fadeInDown">
             <h2>Features</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-o">
-                    <i class="fa fa-plane"></i>
-                        <h2>Fresh and Clean</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-o">
-                    <i class="fa fa-graduation-cap"></i>
-                        <h2>Retina ready</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-o">
-                    <i class="fa fa-university"></i>
-                        <h2>Easy to customize</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-o">
-                    <i class="fa fa-leaf"></i>
-                        <h2>Adipisicing elit</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-o">
-                    <i class="fa fa-cogs"></i>
-                        <h2>Sed do eiusmod</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-o">
-                    <i class="fa fa-heart"></i>
-                        <h2>Labore et dolore</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                </div>
-            </div><!--/.col-md-4-->
-          </div><!--/.row-->
+          <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                      <div class="feature-wrap-i">
+                          <i class="fa fa-plane"></i>
+                          <h2>Fresh and Clean</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                    </div>
+                  </div><!--/.col-md-4-->
 
+                  <div class="col-md-4 col-sm-6">
+                      <div class="feature-wrap-y">
+                          <i class="fa fa-graduation-cap"></i>
+                          <h2>Retina ready</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                      </div>
+                  </div><!--/.col-md-4-->
+
+                  <div class="col-md-4 col-sm-6">
+                      <div class="feature-wrap-o">
+                          <i class="fa fa-university"></i>
+                          <h2>Easy to customize</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                      </div>
+                  </div><!--/.col-md-4-->
+
+                  <div class="col-md-4 col-sm-6">
+                      <div class="feature-wrap-o">
+                          <i class="fa fa-leaf"></i>
+                          <h2>Adipisicing elit</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                      </div>
+                  </div><!--/.col-md-4-->
+
+                  <div class="col-md-4 col-sm-6">
+                      <div class="feature-wrap-o">
+                          <i class="fa fa-cogs"></i>
+                          <h2>Sed do eiusmod</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                      </div>
+                  </div><!--/.col-md-4-->
+
+                  <div class="col-md-4 col-sm-6">
+                      <div class="feature-wrap-o">
+                          <i class="fa fa-heart"></i>
+                          <h2>Labore et dolore</h2>
+                          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                      </div>
+                  </div><!--/.col-md-4-->
+          </div><!--/.row-->
       </div><!--/.container-->
+    </div>
 
         <div class="footer">
           <div class="footer-content">
