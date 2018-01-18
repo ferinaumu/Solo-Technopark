@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://localhost/STP/assets/css/slider/icon.css" rel="stylesheet">
-    <link href="http://localhost/stp/assets/css/slider/bootstrap.min.css" rel="stylesheet">
-	  <link rel="stylesheet" href="http://localhost/stp/assets/css/slider/font-awesome.min.css">
-	  <link href="http://localhost/stp/assets/css/slider/animate.min.css" rel="stylesheet">
-    <link href="http://localhost/stp/assets/css/slider/prettyPhoto.css" rel="stylesheet">
-	  <link href="http://localhost/stp/assets/css/slider/main.css" rel="stylesheet">
-    <link href="http://localhost/stp/assets/css/slider/responsive.css" rel="stylesheet">
+    <link href="http://localhost/STP/assets/slider/icon.css" rel="stylesheet">
+    <link href="http://localhost/stp/assets/slider/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="http://localhost/stp/assets/slider/font-awesome.min.css">
+	  <link href="http://localhost/stp/assets/slider/animate.min.css" rel="stylesheet">
+    <link href="http://localhost/stp/assets/slider/prettyPhoto.css" rel="stylesheet">
+	  <link href="http://localhost/stp/assets/slider/main.css" rel="stylesheet">
+    <link href="http://localhost/stp/assets/slider/responsive.css" rel="stylesheet">
     <link rel="stylesheet" id="styles-css" href="http://localhost/stp/assets/css/styles_002.css" type="text/css" media="all">
     <link rel="stylesheet" id="style-css" href="http://localhost/stp/assets/css/style_3.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
