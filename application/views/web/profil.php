@@ -37,7 +37,7 @@
     <title></title>
   </head>
   <body>
-    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg')">
+    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg'); margin-top:5px">
       <div class="grid-10 tablet-grid-10 mobile-grid-30 b-r logo-holder">
         <a href="http://localhost/stp/"><img src="http://localhost/stp/assets/img/logostp.png" alt=""></a>
       </div>

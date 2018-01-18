@@ -44,7 +44,7 @@
     <title></title>
   </head>
   <body>
-    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg')">
+    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg'); margin-top:5px">
       <div class="grid-10 tablet-grid-10 mobile-grid-30 b-r logo-holder">
         <a href="http://localhost/stp/"><img src="http://localhost/stp/assets/img/logostp.png" alt=""></a>
       </div>
@@ -174,14 +174,14 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-i">
+                <div class="feature-wrap-o">
                     <i class="fa fa-plane"></i>
                         <h2>Fresh and Clean</h2>
                         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
                 </div>
             </div><!--/.col-md-4-->
             <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-y">
+                <div class="feature-wrap-o">
                     <i class="fa fa-graduation-cap"></i>
                         <h2>Retina ready</h2>
                         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
