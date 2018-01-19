@@ -70,8 +70,7 @@
       });
   });
     </script>
-
-    <title></title>
+    <title>Solo Technopark | Solo Science Center</title>
   </head>
   <body>
     <div class="container-fluid page page-content">

@@ -39,6 +39,13 @@
       }
     </script>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://localhost/stp/assets/js/jquery.js"></script>
+    <script src="http://localhost/stp/assets/js/bootstrap.min.js"></script>
+    <script src="http://localhost/stp/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="http://localhost/stp/assets/js/jquery.isotope.min.js"></script>
+    <script src="http://localhost/stp/assets/js/wow.min.js"></script>
+    <script src="http://localhost/stp/assets/js/main.js"></script>
     <style>
     /* Note: Try to remove the following lines to see the effect of CSS positioning */
     .affix {
@@ -77,8 +84,10 @@
       });
   });
     </script>
+    <title>Solo Technopark</title>
   </head>
   <body>
+    <!--header-->
     <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg')">
       <div class="grid-10 tablet-grid-10 mobile-grid-30 b-r logo-holder">
         <a href="http://localhost/stp/"><img src="http://localhost/stp/assets/img/logostp.png" alt=""></a>
@@ -96,6 +105,7 @@
       </div>
     </div>
 
+    <!--navigasi-->
     <div class="main-nav" style="background-color:#4286f4" data-spy="affix" data-offset-top="197">
       <div class="grid-container" style="background-color:#4286f4;width:auto;">
         <nav style="background-color:#4286f4">
@@ -121,11 +131,14 @@
               </li>
               <li><a href="<?php echo base_url("web/kontak"); ?>">Kontak</a></li>
             </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
+          </div><!--/.menu-text-->
+        </nav><!--/.menu-text-->
+      </div><!--/.grid-container-->
+    </div><!--/.main-nav-->
+
+<!--isi content-->
     <div id="ajax-content">
+      <!--konten 1 slider dan submenu-->
         <div class="container" style="width:1175px;height:auto">
         <div class="slider" style="margin-top:30px">
             <div class="col-sm-6">
@@ -202,7 +215,12 @@
         </div>
       </div><!--/.container-->
 
+  <!--konten 2 untuk brosur dll-->
+      <div class="container" style="width:1175px;height:auto">
+      <p-1>untuk brosur dan keterangan blablabla</p-1>
+      </div>
 
+  <!--konten 3 untuk layanan diklat-->
       <div class="container" style="width:1175px;height:auto">
         <div class="center wow fadeInDown">
             <h2>Features</h2>
@@ -210,7 +228,7 @@
         </div>
           <div class="row">
                   <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-i">
+                      <div class="feature-wrap-o">
                           <i class="fa fa-plane"></i>
                           <h2>Fresh and Clean</h2>
                           <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -218,7 +236,7 @@
                   </div><!--/.col-md-4-->
 
                   <div class="col-md-4 col-sm-6">
-                      <div class="feature-wrap-y">
+                      <div class="feature-wrap-o">
                           <i class="fa fa-graduation-cap"></i>
                           <h2>Retina ready</h2>
                           <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -260,18 +278,17 @@
       </div><!--/.container-->
     </div>
 
+<!--footer-->
         <div class="footer">
           <div class="footer-content">
-            <p>Contact Us :</p>
+            <p-1>Contact Us :</p-1>
+            <div class="sosmed">
+            <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i><p-1>   Whatsapp   </p-1>
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true">  </i><p-1>   Solo Technopark</p-1>
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true">  </i><p-1>   Solo Technopark</p-1>
+            <i class="fa fa-instagram fa-3x" aria-hidden="true">  </i><p-1>   Solo Technopark</p-1>
           </div>
         </div>
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="http://localhost/stp/assets/js/jquery.js"></script>
-        <script src="http://localhost/stp/assets/js/bootstrap.min.js"></script>
-        <script src="http://localhost/stp/assets/js/jquery.prettyPhoto.js"></script>
-        <script src="http://localhost/stp/assets/js/jquery.isotope.min.js"></script>
-        <script src="http://localhost/stp/assets/js/wow.min.js"></script>
-      <script src="http://localhost/stp/assets/js/main.js"></script>
-      </body>
-    </html>
+      </div>
+    </body>
+  </html>

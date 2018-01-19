@@ -163,7 +163,7 @@
   </div>
     <div class="row">
             <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-i">
+                <div class="feature-wrap-o">
                     <i class="fa fa-plane"></i>
                     <h2>Fresh and Clean</h2>
                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -171,7 +171,7 @@
             </div><!--/.col-md-4-->
 
             <div class="col-md-4 col-sm-6">
-                <div class="feature-wrap-y">
+                <div class="feature-wrap-o">
                     <i class="fa fa-graduation-cap"></i>
                     <h2>Retina ready</h2>
                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>

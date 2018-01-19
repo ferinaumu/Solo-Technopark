@@ -27,9 +27,12 @@
 }
 
 .footer-content{
-  margin-top: 50px;
-  padding-top: 30px;
-  padding-left: 75px;
-  padding-right: 75px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
+}
+.sosmed{
+  padding-left: 50px;
+  padding-bottom: 10px;
 }
