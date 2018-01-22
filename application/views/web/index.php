@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
     <link rel="stylesheet" href="http://localhost/stp/assets/css/style.css" />
     <link href="<?php echo base_url("assets/slider/bootstrap.min.css"); ?>" rel="stylesheet">
 	  <link rel="stylesheet" href="<?php echo base_url("assets/slider/font-awesome.min.css"); ?>">
@@ -88,50 +88,43 @@
   </head>
   <body>
     <!--header-->
-    <div class="container-fluid page" style="background-image:url('http://localhost/stp/assets/img/indonesia2.jpg')">
+    <div class="container-fluid">
       <div class="grid-10 tablet-grid-10 mobile-grid-30 b-r logo-holder">
         <a href="http://localhost/stp/"><img src="http://localhost/stp/assets/img/logostp.png" alt=""></a>
       </div>
-      <div class="grid-50 tablet-grid-60 mobile-grid-70">
         <div class="brand">
           <h3 class="site-title" style="font-size:15px">WHERE <br>COMPETENCE <br>INOVATIVE <br>TECHNOLOGY <br>AND BUSINESS GROW</h3>
         </div><!-- brand -->
-      </div>
-      <div class="grid-20 tablet-grid-20 hide-on-mobile">
-        <form role="search" method="get" id="searchform" action="https://ristekdikti.go.id/" class="search-top" style="margin:0;">
-          <input name="s" id="s" type="text">
-          <input value="" type="submit">
-        </form>
-      </div>
     </div>
 
     <!--navigasi-->
     <div class="main-nav" style="background-color:#4286f4" data-spy="affix" data-offset-top="197">
       <div class="grid-container" style="background-color:#4286f4;width:auto;">
         <nav style="background-color:#4286f4">
-          <div class="menu text-uppercase">
-            <ul id="nav" class=" horizontal no-padder">
-             <li><a href="<?php echo base_url("web/home"); ?>">Home</a></li>
-              <li><a href='<?php echo base_url("web/profil"); ?>'>Profil</a></li>
-              <li><a href="<?php echo base_url("web/program"); ?>">Program</a></li>
-              <li><a href="<?php echo base_url("web/berita"); ?>">Berita</a></li>
-              <li><a href="<?php echo base_url("web/ssc"); ?>">Solo Science Center</a></li>
-              <li><a>Diklat Mekanik</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Berita</a></li>
-                  <li><a href="#">Pendaftaran</a></li>
+          <div>
+            <ul class="nav navbar-nav" class=" horizontal no-padder">
+             <li><a class="active" href="<?php echo base_url("web/home"); ?>">HOME</a></li>
+              <li><a href='<?php echo base_url("web/profil"); ?>'>PROFIL</a></li>
+              <li><a href="<?php echo base_url("web/program"); ?>">PROGRAM</a></li>
+              <li><a href="<?php echo base_url("web/berita"); ?>">BERITA</a></li>
+              <li><a href="<?php echo base_url("web/ssc"); ?>">SOLO SCIENCE CENTER</a></li>
+              <li><a>DIKLAT MEKANIK</a>
+                <ul>
+                  <li><a href="#">BERITA</a></li>
+                  <li><a href="#">PENDAFTARAN</a></li>
                 </ul>
               </li>
-              <li><a>Inkubator Bisnis</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Berita</a></li>
-                  <li><a href="#">Pendaftaran</a></li>
-                  <li><a href="#">Profil Tenant dan List Produk</a></li>
+              <li><a>INKUBATOR BISNIS</a>
+                <ul>
+                  <li><a href="#">BERITA</a></li>
+                  <li><a href="#">PENDAFTARAN</a></li>
+                  <li><a href="#">PROFIL TENANT DAN <br>LIST PRODUK</a></li>
                 </ul>
               </li>
-              <li><a href="<?php echo base_url("web/kontak"); ?>">Kontak</a></li>
+              <li><a href="<?php echo base_url("web/kontak"); ?>">KONTAK</a></li>
             </ul>
           </div><!--/.menu-text-->
+        </div>
         </nav><!--/.menu-text-->
       </div><!--/.grid-container-->
     </div><!--/.main-nav-->
@@ -284,9 +277,9 @@
             <p-1>Contact Us :</p-1>
             <div class="sosmed">
             <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i><p-1>   Whatsapp   </p-1>
-            <i class="fa fa-facebook-square fa-3x" aria-hidden="true">  </i><p-1>   Solo Technopark</p-1>
-            <i class="fa fa-twitter-square fa-3x" aria-hidden="true">  </i><p-1>   Solo Technopark</p-1>
-            <i class="fa fa-instagram fa-3x" aria-hidden="true">  </i><p-1>   Solo Technopark</p-1>
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true"> </i><p-1>   Solo Technopark</p-1>
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"> </i><p-1>   Solo Technopark</p-1>
+            <i class="fa fa-instagram fa-3x" aria-hidden="true"> </i><p-1>   Solo Technopark</p-1>
           </div>
         </div>
       </div>
